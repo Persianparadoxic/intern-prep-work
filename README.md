@@ -20,3 +20,11 @@ Click the link at the top of the page to fork this repository into your own GitH
 Open your favorite editor (most of us on the GDG EE project use [Microsoft's open source VSCode editor](https://code.visualstudio.com/)) at the root of the project and you'll finally be able to write some code. Start with the `hello-world` folder and follow the instructions in the `README.md` file in there, ignoring anything about exercism.io (that's where these exercises came from originally, I just modified them a little for our purposes). Instead of submitting to exercism, you should use git to push changes to your master branch. By doing that, I'll be able to look at your code we can talk about it. I want you guys to focus on the unit tests especially. Testing is _invaluably_ important and you may end up spending a good portion of your time working on some tests for our platform code. 
 
 The general idea here is to get you acquainted with JavaScript in a general way. We use AngularJS for our front-end code and you'll certainly get to learn a lot of that over the summer, but the best place to start is with plain old vanilla JavaScript. Feel free to augment the exercises in any way you feel lead to. Some of them might be a little easy depending on how comfortable you are with programming to begin with. Please email me if you have any questions (Parker should give you my work email, though my personal email is listed on my GitHub account and works just fine)!
+
+Pushing code to your fork of this repository is the best way for us to be able to talk about it. If you're using VSCode, it has really awesome Git integration and will make it super easy for you to commit, and push code to your repository. Whenever you push up a new solution, shoot me an email or GitHub message and we'll talk about your work and review the ideas! GitHub's own tutorials are the best ones to get you associated with the workflow:
+
+[https://guides.github.com/introduction/flow/](https://guides.github.com/introduction/flow/)
+
+[https://try.github.io/levels/1/challenges/1](https://try.github.io/levels/1/challenges/1])
+
+Best of luck!
