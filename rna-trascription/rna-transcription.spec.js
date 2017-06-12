@@ -1,7 +1,7 @@
 var DnaTranscriber = require('./rna-transcription');
 var dnaTranscriber = new DnaTranscriber();
 
-describe('toRna()', function () {
+describe('toRna()', function () {   
 
   /**
    * Write some tests that show each individual rna type being

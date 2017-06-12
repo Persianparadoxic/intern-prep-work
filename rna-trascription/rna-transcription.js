@@ -21,7 +21,7 @@ var invalidInput = new Error("Invalid input");
          }
           else if (input[i]=='G'){
           rna = rna+"C";
-         }
+         }    
          else if (input[i]=='X'){
              throw invalidInput;
          }
