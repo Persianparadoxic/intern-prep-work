@@ -1,46 +1,9 @@
 var Bob = require('./bob.js');
-
+//var abob = new aBob();
 describe('Bob', function () {
   var bob = new Bob();
 
-  it('should respond "Whatever" when something is stated at him');
-
-  it('should response "Whoa, chill out!" when shouted at');
-
-  it('should agree with "Sure" when asked a question');
-
-  it('should respond with "Whatever" when merely spoken to assertively');
-
-  it('should respond "Whoa, chill out!" when shouted a question');
-
-  it('should respond "Whoa, chill out!" when shouted at with numbers');
-
-  it('should respond "Whatever" when only spoken to with numbers');
-
-  it('should agree when asked a question with numbers');
-
-  it('should respond "Whoa, chill out!" when shouted at with symbols');
-
-  /* NOTE: \xc4 = Ä
-           \xe4 = ä
-           \xdc = Ü 
-           \xfc = ü
-     "\xfcML\xe4\xdcTS" === "üMLäÜTS"
-  */
-  it('should respond "Whoa, chill out!" when should at with umlauts (unicode)');
-
-  it('should respond "Whatever" when calmly spoken to with umlauts');
-
-  it('should respond "Whoa, chill out!" when spoken to in only caps but no exclamation mark');
-
-  it('should respond with "Whatever" when given an assertion containing but not ending in a question');
-
-  it('should agree when several statements are spoken to him and the last one is a question');
-
-  it('should be indignant when not spoken to');
-
-  it('should be indignant when spoken to with prolonged silence (multiple spaces)');
-
+ 
   /**
    * Are there more tests you can think of that would push the limits of
    * what Bob is capable of? How about different types of whitespace like
@@ -57,8 +20,31 @@ describe('Bob', function () {
    * Do you think the test below (about acronyms) is a worthwhile test? Why or why not?
    */
 
-  it('using acronyms in regular speech', function () {
+  it('using acronyms in regular speech (.)', function () {
     var result = bob.hey('It\'s OK if you don\'t want to go to the DMV.');
-    expect(result).toEqual('Whatever.');
-  });
+    expect(result).toEqual('Whatever.')})
+
+  it('gets asked a simple question (?)', function () {
+    var result = bob.hey('Can you stop acting so rude?');
+    expect(result).toEqual('Sure.')})
+
+  it('is shouted at (!)', function () {
+    var result = bob.hey('Listen to me!');
+    expect(result).toEqual('Woah, chill out!')})
+
+  it('should reply to curse words (!)', function () {
+    var result = bob.hey('@%*$!');
+    expect(result).toEqual('Woah, chill out!')})
+
+  //it('is shoted at in CAPS but no (!)', function () {
+   // var result = bob.hey('STOP IT');
+   // expect(result).toEqual('Woah, chill out!')})
+
+  it('is shouted a question', function () {
+    var result = bob.hey('Why are you behaving like this?!');
+    expect(result).toEqual('Woah, chill out!')})
+
+  it('is not spoken to', function () {
+    var result = bob.hey('   ');
+    expect(result).toEqual('Fine. Be that way!')})
 });
