@@ -36,9 +36,9 @@ describe('Bob', function () {
     var result = bob.hey('@%*$!');
     expect(result).toEqual('Woah, chill out!')})
 
-  //it('is shoted at in CAPS but no (!)', function () {
-   // var result = bob.hey('STOP IT');
-   // expect(result).toEqual('Woah, chill out!')})
+  it('is shoted at in CAPS but no (!)', function () {
+   var result = bob.hey('STOP IT');
+    expect(result).toEqual('Woah, chill out!')})
 
   it('is shouted a question', function () {
     var result = bob.hey('Why are you behaving like this?!');
